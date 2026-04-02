@@ -292,7 +292,11 @@ nav.scrolled {
 /* ======= HERO SECTION ======= */
 .hero-section {
     position: relative;
-    padding-top: 150px;
+    padding-top: 60px; /* Reducido de 150px */
+}
+
+.hero-section .container {
+    padding-top: 40px; /* Reducido de 120px para el Hero */
 }
 
 .hero-content {
