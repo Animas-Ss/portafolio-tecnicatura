@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animas Dev | Software Developer</title>
+    <meta name="description"
+        content="Portafolio interactivo de Animas Dev, experto en desarrollo de software y resolución de problemas técnicos a través del código.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inspiration&family=Kolker+Brush&family=Oswald:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Fondo animado Aurora Mesh -->
+    <div id="aurora-bg"></div>
+
+    <!-- Navegación Sticky -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link btn-contact">Contacto</a></li>
+            </ul>
+            <!-- Menu hamburguesa mobile -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="hero" class="hero-section section">
+            <div class="container hero-grid">
+                <!-- Columna Visual (Derecha) -->
+                <div class="hero-column">
+                    <!-- Ventana Maestra Exterior (Visual) -->
+                    <div class="code-window transparent hero-outer-window reveal fade-up"
+                        style="transition-delay: 200ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body"
+                            style="padding: 40px; display: flex; justify-content: center; align-items: center; min-height: 450px;">
+
+                            <!-- Contenedor Visual (Sin estilo de ventana) -->
+                            <div style="width: 100%;">
+                                <div class="window-body"
+                                    style="padding: 40px 75px; display: flex; justify-content: center; align-items: center;">
+                                    <div class="circular-text-wrapper">
+                                        <!-- SVG con doble anillo de texto -->
+                                        <svg viewBox="0 0 200 200" class="circular-text-svg">
+                                            <path id="innerCirclePath"
+                                                d="M 100, 100 m -60, 0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"
+                                                fill="transparent" />
+                                            <path id="outerCirclePath"
+                                                d="M 100, 100 m -85, 0 a 85,85 0 1,1 170,0 a 85,85 0 1,1 -170,0"
+                                                fill="transparent" />
+                                            <text class="inner-text-path">
+                                                <textPath xlink:href="#innerCirclePath" class="circular-text">Creative ·
+                                                    Software · Developer · Creative · Software · Developer ·</textPath>
+                                            </text>
+                                            <text class="outer-text-path">
+                                                <textPath xlink:href="#outerCirclePath"
+                                                    class="circular-text white-text">SEBASTIAN SOSA · SEBASTIAN SOSA ·
+                                                    SEBASTIAN SOSA · SEBASTIAN SOSA ·</textPath>
+                                            </text>
+                                        </svg>
+                                        <img src="assets/retoque-2.png" alt="Sebastián Sosa Brand"
+                                            class="hero-brand-img">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Columna de Texto / Contenido (Izquierda) -->
+                <div class="hero-text-content reveal fade-up" style="transition-delay: 100ms; position: relative;">
+                    <!-- Ventana de Frase Principal (Anidada) -->
+                    <div class="code-window transparent main-phrase-window">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <p class="description">
+                                Transformo problemas complejos en soluciones tecnológicas escalables,
+                                combinando lógica de alta
+                                precisión con interfaces estéticas y funcionales que marcan la diferencia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Ventanas de Botones (Flotantes) -->
+                    <div class="floating-cta-container">
+                        <a href="#projects" class="cta-window-link cta-projects">
+                            <div class="code-window transparent small-cta-window reveal fade-up"
+                                style="transition-delay: 300ms;">
+                                <div class="window-header"><span class="dot red"></span></div>
+                                <div class="window-body"><span>Explorar Proyectos ↗</span></div>
+                            </div>
+                        </a>
+                        <a href="#contact" class="cta-window-link cta-contact">
+                            <div class="code-window transparent small-cta-window highlight-border reveal fade-up"
+                                style="transition-delay: 400ms;">
+                                <div class="window-header"><span class="dot green"></span></div>
+                                <div class="window-body"><span>Hablemos ✉</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <h2 class="section-title reveal fade-up">Sobre Mí<span class="dot">.</span></h2>
+                <div class="about-grid">
+                    <div class="about-cards-container reveal slide-right"
+                        style="display: flex; flex-direction: column; gap: 30px;">
+                        <!-- Tarjeta 1: Sobre Mí -->
+                        <div class="code-window">
+                            <div class="window-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="window-body"
+                                style="font-family: var(--font-body); font-size: 1.1rem; padding: 30px;">
+                                <p style="margin-bottom: 20px; color: var(--text-secondary); line-height: 1.8;">Soy un
+                                    desarrollador orientado a la resolución constante de problemas. Entiendo el código
+                                    no solo como instrucciones, sino como la herramienta para optimizar procesos
+                                    comerciales e impactar en los usuarios finales.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.8;">Mi enfoque combina <strong
+                                        style="color: var(--brand-blue);">buenas prácticas de arquitectura</strong>,
+                                    rendimiento optimizado y una profunda apreciación por el diseño UX. Si hay una
+                                    ineficiencia en un proceso, me encargo de automatizarla y llevarla al siguiente
+                                    nivel.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 2: Stack Principal -->
+                        <div class="code-window">
+                            <div class="window-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="window-body" style="padding: 30px;">
+                                <div class="tech-stack" style="margin-top: 0;">
+                                    <h3
+                                        style="margin-bottom: 20px; color: var(--text-primary); font-size: 1.25rem; font-family: var(--font-heading);">
+                                        Stack Principal</h3>
+                                    <div class="tags" style="display: flex; flex-wrap: wrap; gap: 12px;">
+                                        <span class="tag">JavaScript (ES6+)</span>
+                                        <span class="tag">TypeScript</span>
+                                        <span class="tag">React & Next.js</span>
+                                        <span class="tag">Node.js</span>
+                                        <span class="tag">Framer/Three.js</span>
+                                        <span class="tag">SQL & NoSQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual reveal slide-left">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="window-body">
+                                <code>
+                                    <span class="keyword">const</span> <span class="var">animas</span> = {<br>
+                                    &nbsp;&nbsp;<span class="key">role</span>: <span class="string">'Fullstack Developer'</span>,<br>
+                                    &nbsp;&nbsp;<span class="key">passion</span>: <span class="string">'Problem Solving'</span>,<br>
+                                    &nbsp;&nbsp;<span class="key">solve</span>: (<span class="arg">problem</span>) => {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="var">animas</span>.<span class="func">code</span>(problem).<span class="func">optimize</span>();<br>
+                                    &nbsp;&nbsp;}<br>
+                                    };
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section section" style="z-index: 10;">
+            <!-- Background Parallax Image -->
+            <div class="section-parallax-bg"
+                style="background-image: url('assets/Gemini_Generated_Image_h5htnth5htnth5ht.png');"></div>
+            <div class="parallax-overlay"></div>
+
+            <div class="container">
+                <h2 class="section-title reveal fade-up" style="text-align: center;">Servicios que ofrezco</h2>
+                <div class="services-grid">
+                    <!-- Servicio 1 -->
+                    <div class="service-card code-window transparent reveal fade-up" style="transition-delay: 100ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <div class="icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                            <h3>Sitios web para empresas</h3>
+                            <p>Sitios web de alto rendimiento diseñados para convertir visitantes en leads. Ideal para
+                                concesionarias, talleress y marcas automotrices.</p>
+
+                            <div class="includes-section">
+                                <p class="includes-title">Incluye:</p>
+                                <ul class="includes-list">
+                                    <li>Landing pages corporativos</li>
+                                    <li>Estructura lista para SEO</li>
+                                    <li>Diseño mobile-first</li>
+                                    <li>Captura de leads</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="service-card code-window transparent reveal fade-up" style="transition-delay: 200ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <div class="icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path
+                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3>Sistemas internos personalizados</h3>
+                            <p>Herramientas construidas para simplificar operaciones diarias y mejorar el control.</p>
+
+                            <div class="includes-section">
+                                <p class="includes-title">Incluye:</p>
+                                <ul class="includes-list">
+                                    <li>Gestión de inventario</li>
+                                    <li>Seguimiento de ventas</li>
+                                    <li>Tableros internos</li>
+                                    <li>Sistemas de acceso</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="service-card code-window transparent reveal fade-up" style="transition-delay: 300ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <div class="icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                                </svg>
+                            </div>
+                            <h3>Automatizaciones</h3>
+                            <p>Diseño de automatizaciones que reducen el trabajo manual y los errores humanos.</p>
+
+                            <div class="includes-section">
+                                <p class="includes-title">Incluye:</p>
+                                <ul class="includes-list">
+                                    <li>Integraciones CRM</li>
+                                    <li>Notificaciones automatizadas</li>
+                                    <li>Sincronización de datos</li>
+                                    <li>Reportes automáticos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Why Work With Me Section (Bento Grid) -->
+        <section id="why-me" class="why-me-section section" style="z-index: 20;">
+            <!-- Background Sticky Image for Bento Grid -->
+            <div class="section-parallax-bg"
+                style="background-image: url('assets/Gemini_Generated_Image_qvlmynqvlmynqvlm.png');"></div>
+            <div class="parallax-overlay"></div>
+
+            <div class="container">
+                <div class="section-header reveal fade-up">
+                    <h2 class="section-title">¿Por qué trabajar conmigo?</h2>
+                    <p class="section-subtitle">Combinando tecnología moderna con un enfoque práctico para la industria
+                        automotriz</p>
+                </div>
+
+                <div class="why-grid">
+                    <!-- Tarjeta 1 (Arriba Izquierda) -->
+                    <div class="why-card code-window transparent reveal fade-up">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <div class="why-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                                    </path>
+                                    <path d="M10 10l-2 2 2 2m4-4l2 2-2 2"></path>
+                                </svg>
+                            </div>
+                            <h3>Código limpio y escalable</h3>
+                            <p>Desarrollo con las mejores prácticas, asegurando que tu sistema pueda crecer con tu
+                                negocio.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2 (Centro Alta) -->
+                    <div class="why-card code-window transparent relative tall-card reveal fade-up"
+                        style="transition-delay: 100ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <div class="why-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                            </div>
+                            <div class="content-bottom" style="margin-top: auto;">
+                                <h3>Seguridad y confiabilidad</h3>
+                                <p>Tu información y la de tus clientes están protegidas con las últimas tecnologías de
+                                    seguridad.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3 (Arriba Derecha) -->
+                    <div class="why-card code-window transparent highlight-border reveal fade-up"
+                        style="transition-delay: 200ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <div class="why-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                            </div>
+                            <h3>Diseño moderno</h3>
+                            <p>Interfaces elegantes que funcionan perfectamente en todos los dispositivos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 4 (Abajo Izquierda) -->
+                    <div class="why-card code-window transparent reveal fade-up" style="transition-delay: 50ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <div class="why-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path
+                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3>Soluciones personalizadas</h3>
+                            <p>Desarrollo diseñado específicamente para tus necesidades.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 5 (Abajo Derecha) -->
+                    <div class="why-card code-window transparent reveal fade-up" style="transition-delay: 250ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <div class="why-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                            </div>
+                            <h3>Optimizado para SEO</h3>
+                            <p>Tu sitio web aparecerá en las búsquedas cuando tus clientes te necesiten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Bento Grid) -->
+        <section id="projects" class="projects-section section" style="z-index: 30;">
+            <!-- Background Sticky Image for Projects -->
+            <div class="section-parallax-bg"
+                style="background-image: url('assets/Gemini_Generated_Image_mqkzmrmqkzmrmqkz.png');"></div>
+            <div class="parallax-overlay"></div>
+
+            <div class="container">
+                <h2 class="section-title reveal fade-up">Proyectos Destacados<span class="dot">.</span></h2>
+                <div class="projects-grid-new">
+                    <!-- Proyecto 1: Ecos Podcast -->
+                    <div class="project-card-new code-window transparent reveal fade-up">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body" style="padding: 0;">
+                            <div class="project-image"
+                                style="background-image: url('assets/Captura%20de%20pantalla%202026-03-31%20114523.png');">
+                                <span class="status-pill completed">Completado</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>Ecos Podcast</h3>
+                                <span class="project-subtitle">Web Application / Podcast</span>
+                                <p>Plataforma web dinámica para la difusión de episodios, integrando un diseño moderno y
+                                    accesible.</p>
+
+                                <div class="tech-tags-new">
+                                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                                </div>
+
+                                <div class="project-footer">
+                                    <a href="https://animas-ss.github.io/Ecos-Podcast-Codo/" target="_blank"
+                                        rel="noopener noreferrer" class="link-completed">Ver proyecto ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2: Severus IA -->
+                    <div class="project-card-new code-window transparent reveal fade-up"
+                        style="transition-delay: 100ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body" style="padding: 0;">
+                            <div class="project-image"
+                                style="background-image: url('assets/Gemini_Generated_Image_5s8g465s8g465s8g.png');">
+                                <span class="status-pill completed">Completado</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>Severus IA</h3>
+                                <span class="project-subtitle">Desktop AI Assistant</span>
+                                <p>Asistente virtual de escritorio impulsado por IA, integrando tecnologías web y
+                                    sistemas nativos.</p>
+
+                                <div class="tech-tags-new">
+                                    <span>JavaScript</span><span>Tauri</span><span>Rust</span>
+                                </div>
+
+                                <div class="project-footer">
+                                    <a href="https://github.com/Animas-Ss/Severus-IA" target="_blank"
+                                        rel="noopener noreferrer" class="link-completed">Ver proyecto ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3: NeuroTrack -->
+                    <div class="project-card-new code-window transparent reveal fade-up"
+                        style="transition-delay: 200ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body" style="padding: 0;">
+                            <div class="project-image"
+                                style="background: linear-gradient(to bottom, #111417, #0a0e17);">
+                                <span class="status-pill nda">NDA</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>NeuroTrack</h3>
+                                <span class="project-subtitle">App Mobile Local</span>
+                                <p>Aplicación multiplataforma para seguimiento de hábitos enfocados en bienestar
+                                    digital.</p>
+
+                                <div class="tech-tags-new">
+                                    <span>React Native</span><span>Redux</span>
+                                </div>
+
+                                <div class="project-footer">
+                                    <span class="link-nda">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" style="margin-right: 5px; margin-bottom: -3px;">
+                                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                        </svg>
+                                        Proyecto bajo acuerdo NDA
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section" style="z-index: 40; background-color: var(--bg-base);">
+            <div class="container">
+                <div class="contact-wrapper reveal fade-up">
+                    <div class="contact-info">
+                        <h2 class="section-title">¿Listo para construir el siguiente gran proyecto?</h2>
+                        <p>Siempre abierto a nuevos desafíos, oportunidades de colaboración y proyectos ambiciosos.
+                            Escríbeme y charlemos sobre como aportar valor técnico a tu equipo.</p>
+
+                        <div class="contact-socials">
+                            <a href="#" class="social-btn" aria-label="LinkedIn">LinkedIn</a>
+                            <a href="#" class="social-btn" aria-label="GitHub">GitHub</a>
+                            <a href="#" class="social-btn" aria-label="Twitter">X / Twitter</a>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required placeholder="Nombre o Empresa">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" required
+                                placeholder="Cuéntame sobre tu proyecto o puesto vacante..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Enviar Mensaje <span class="arrow">→</span>
+                        </button>
+                        <p id="form-status" class="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container footer-content">
+                <p>&copy; <span id="year"></span> Animas Dev. Designed & Built for impact.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.174.0/build/three.webgpu.js",
+                "three/webgpu": "https://unpkg.com/three@0.174.0/build/three.webgpu.js",
+                "three/tsl": "https://unpkg.com/three@0.174.0/build/three.tsl.js",
+                "three/addons/": "https://unpkg.com/three@0.174.0/examples/jsm/",
+                "gsap": "https://unpkg.com/gsap@3.12.5/index.js",
+                "gsap/ScrollTrigger": "https://unpkg.com/gsap@3.12.5/ScrollTrigger.js"
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

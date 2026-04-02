@@ -1,0 +1,19 @@
+# Módulos y dependencias
+node_modules/
+ejemplo de vortice/
+
+# Ejemplo de vortice extraído
+"ejemplo de vortice"/
+
+# Videos y archivos pesados
+*.mp4
+assets/*.mp4
+
+# Archivos de configuración
+package-lock.json
+package.json
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+.gemini/
