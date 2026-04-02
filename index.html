@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inspiration&family=Kolker+Brush&family=Oswald:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -29,10 +29,11 @@
             <a href="#hero" class="logo">
             </a>
             <ul class="nav-links">
-                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
-                <li><a href="#services" class="nav-link">Servicios</a></li>
-                <li><a href="#projects" class="nav-link">Proyectos</a></li>
-                <li><a href="#contact" class="nav-link btn-contact">Contacto</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Inicio</a></li>
+                <li><a href="#tarjetas" class="nav-link">Servicios</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#peliculas" class="nav-link">Películas</a></li>
+                <li><a href="#contacto" class="nav-link btn-contact">Contacto</a></li>
             </ul>
             <!-- Menu hamburguesa mobile -->
             <div class="menu-toggle" id="mobile-menu">
@@ -45,7 +46,7 @@
 
     <main>
         <!-- Home / Hero Section -->
-        <section id="hero" class="hero-section section">
+        <section id="sobre-mi" class="hero-section section">
             <div class="container hero-grid">
                 <!-- Columna Visual (Derecha) -->
                 <div class="hero-column">
@@ -169,7 +170,7 @@
                                 <span class="dot green"></span>
                             </div>
                             <div class="window-body" style="padding: 30px;">
-                                <div class="tech-stack" style="margin-top: 0;">
+                                <div id="habilidades" class="tech-stack" style="margin-top: 0;">
                                     <h3
                                         style="margin-bottom: 20px; color: var(--text-primary); font-size: 1.25rem; font-family: var(--font-heading);">
                                         Stack Principal</h3>
@@ -218,7 +219,7 @@
 
             <div class="container">
                 <h2 class="section-title reveal fade-up" style="text-align: center;">Servicios que ofrezco</h2>
-                <div class="services-grid">
+                <div id="tarjetas" class="services-grid">
                     <!-- Servicio 1 -->
                     <div class="service-card code-window transparent reveal fade-up" style="transition-delay: 100ms;">
                         <div class="window-header">
@@ -555,6 +556,53 @@
                                     </span>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Películas Favoritas Section -->
+        <section id="peliculas" class="peliculas-section section" style="z-index: 35; background-color: var(--bg-surface);">
+            <div class="container">
+                <h2 class="section-title reveal fade-up">Películas Favoritas<span class="dot">.</span></h2>
+                <div class="services-grid">
+                    <!-- Película 1 -->
+                    <div class="service-card code-window transparent reveal fade-up" style="transition-delay: 100ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <h3>Seven (Los 7 pecados capitales)</h3>
+                            <p>Un thriller psicológico magistral que explora la naturaleza humana a través de una narrativa sombría y cautivadora.</p>
+                        </div>
+                    </div>
+
+                    <!-- Película 2 -->
+                    <div class="service-card code-window transparent reveal fade-up" style="transition-delay: 200ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <h3>Hombre en llamas</h3>
+                            <p>Una historia intensa de redención y protección, destacando por su estilo visual único y una actuación poderosa.</p>
+                        </div>
+                    </div>
+
+                    <!-- Película 3 -->
+                    <div class="service-card code-window transparent reveal fade-up" style="transition-delay: 300ms;">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <h3>Gladiador</h3>
+                            <p>Un épico relato de honor y venganza en la antigua Roma, con una dirección impecable y una banda sonora inolvidable.</p>
                         </div>
                     </div>
                 </div>

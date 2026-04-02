@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Despertar primera pantalla rápidamente
     setTimeout(() => {
-        document.querySelectorAll('#hero .reveal').forEach(el => el.classList.add('active'));
+        document.querySelectorAll('#sobre-mi .reveal').forEach(el => el.classList.add('active'));
     }, 100);
 
     // Form Handling Simulado
